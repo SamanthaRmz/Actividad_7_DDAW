@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('rol');
             $table->string('email');
             $table->string('contraseña');
-            $table->foreignId('grupo_id')->constrained('grupos');
             $table->timestamps();
         });
     }
