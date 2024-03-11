@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('portada');
             $table->text('contenido');
             $table->string('material_didactico');
-            $table->foreignId('robotica_id')->constrained('roboticas');
             $table->timestamps();
         });
     }
