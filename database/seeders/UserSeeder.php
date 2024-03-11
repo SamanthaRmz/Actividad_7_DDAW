@@ -14,7 +14,7 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        //Usuario Administrativo
+       //Usuario Administrativo
         DB::table('usuarios')->insert([
             'nombre' => 'Admon',
             'email' => 'admon@robotics.com',
