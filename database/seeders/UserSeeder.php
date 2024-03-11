@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class UserSeeder extends Seeder
 {
@@ -12,7 +13,7 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        // Usuario Administrativo
+        //Usuario Administrativo
         DB::table('users')->insert([
             'name' => 'Admon',
             'email' => 'admon@robotics.com',
@@ -20,7 +21,7 @@ class UserSeeder extends Seeder
             'role' => 'Administrativo',
         ]);
 
-        // Usuario Docente
+        //Usuario Docente
         DB::table('users')->insert([
             'name' => 'Tecmilenio',
             'email' => 'tecmilenio@robotics.com',
@@ -28,7 +29,7 @@ class UserSeeder extends Seeder
             'role' => 'Docente',
         ]);
 
-        // Usuario Estudiante
+        //Usuario Estudiante
         DB::table('users')->insert([
             'name' => 'Estudiante',
             'email' => 'estudiante@robotics.com',
