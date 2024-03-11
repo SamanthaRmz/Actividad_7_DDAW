@@ -15,7 +15,7 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         //Usuario Administrativo
-        DB::table('users')->insert([
+        DB::table('usuarios')->insert([
             'name' => 'Admon',
             'email' => 'admon@robotics.com',
             'password' => Hash::make('Adm@2022'),
@@ -23,7 +23,7 @@ class UserSeeder extends Seeder
         ]);
 
         //Usuario Docente
-        DB::table('users')->insert([
+        DB::table('usuarios')->insert([
             'name' => 'Tecmilenio',
             'email' => 'tecmilenio@robotics.com',
             'password' => Hash::make('Adm@2022'),
@@ -31,7 +31,7 @@ class UserSeeder extends Seeder
         ]);
 
         //Usuario Estudiante
-        DB::table('users')->insert([
+        DB::table('usuarios')->insert([
             'name' => 'Estudiante',
             'email' => 'estudiante@robotics.com',
             'password' => Hash::make('Adm@2022'),
