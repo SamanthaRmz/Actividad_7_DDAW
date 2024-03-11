@@ -16,26 +16,26 @@ class UserSeeder extends Seeder
     {
         //Usuario Administrativo
         DB::table('usuarios')->insert([
-            'name' => 'Admon',
+            'nombre' => 'Admon',
             'email' => 'admon@robotics.com',
-            'password' => Hash::make('Adm@2022'),
-            'role' => 'Administrativo',
+            'contraseña' => Hash::make('Adm@2022'),
+            'rol' => 'Administrativo',
         ]);
 
         //Usuario Docente
         DB::table('usuarios')->insert([
-            'name' => 'Tecmilenio',
+            'nombre' => 'Tecmilenio',
             'email' => 'tecmilenio@robotics.com',
-            'password' => Hash::make('Adm@2022'),
-            'role' => 'Docente',
+            'contraseña' => Hash::make('Adm@2022'),
+            'rol' => 'Docente',
         ]);
 
         //Usuario Estudiante
         DB::table('usuarios')->insert([
-            'name' => 'Estudiante',
+            'nombre' => 'Estudiante',
             'email' => 'estudiante@robotics.com',
-            'password' => Hash::make('Adm@2022'),
-            'role' => 'Estudiante',
+            'contraseña' => Hash::make('Adm@2022'),
+            'rol' => 'Estudiante',
         ]);
     }
 }
