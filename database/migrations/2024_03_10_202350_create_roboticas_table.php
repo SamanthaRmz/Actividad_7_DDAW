@@ -12,7 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('roboticas', function (Blueprint $table) {
-            $table->id();
+            $table->id('id_kit');
+            $table->string('nombre');
             $table->timestamps();
         });
     }
