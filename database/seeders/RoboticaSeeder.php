@@ -12,6 +12,22 @@ class RoboticaSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        DB::table('roboticas')->insert([
+            [
+                'nombre' => 'starterKit',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'nombre' => 'Educational Robotics kit',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'nombre' => 'Kit5',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+        ]);
     }
 }
